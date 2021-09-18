@@ -12,7 +12,7 @@ const App = () => {
 	useEffect(() => {
 		const getCounterAPI = async () => {
 			let res = await fetch(
-				"https://api.countapi.xyz/update/baolongt.github.io/PVU-plant-lookup?amount=1"
+				"https://api.countapi.xyz/hit/baolongt.github.io/PVU-plant-lookup"
 			);
 			let data = await res.json();
 			setCounter(data.value);
@@ -36,8 +36,19 @@ const App = () => {
 
 			<div className="mt-3" style={{ color: "#FFD369" }}>
 				<p className="text-center">Thanks @Cherry3136 for formular</p>
+				<p className="text-center">
+					Donate me: 0x4eAA5f182AcA60A9560b480FE737bc7bC9E33fcB (Binance Smart
+					Chain)
+				</p>
 				<p className="text-center">Visit count: {counter}</p>
 			</div>
+			<p className="d-none" align="left">
+				{" "}
+				<img
+					src="https://komarev.com/ghpvc/?username=baolongt&label=Profile%20views&color=0e75b6&style=flat"
+					alt="baolongt"
+				/>{" "}
+			</p>
 		</>
 	);
 };
